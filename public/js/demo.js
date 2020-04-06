@@ -1,6 +1,3 @@
-console.log("script tag is been connected")
-
-
 var weatherForm = document.querySelector("form")
 var inp = document.querySelector("input")
 const msg1 = document.querySelector("#msg-1")
