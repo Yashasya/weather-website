@@ -1,4 +1,4 @@
-console.log("script tag has been connected")
+console.log("script tag is been connected")
 
 
 var weatherForm = document.querySelector("form")
