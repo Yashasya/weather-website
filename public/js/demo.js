@@ -9,7 +9,7 @@ weatherForm.addEventListener("submit",(e)=>{
     if(!inp.value){
         return msg1.textContent= "you have to type an address"
     }
-    fetch('http://localhost:3000/weather?address='+inp.value).then((response)=>{
+    fetch('/weather?address='+inp.value).then((response)=>{
     response.json().then((data)=>{
         if(data.error){
              msg1.textContent = data.error
