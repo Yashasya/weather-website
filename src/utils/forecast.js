@@ -11,7 +11,7 @@ const forecast = (longitute,latitute,callback) => {
             callback("invalid input")
         }
         else{
-           callback(undefined,body.currently.summary +"It is currently " + body.currently.temperature+ " degrees out there. There is a " + body.currently.precipProbability*100 + "% chance of rain" )
+           callback(undefined,body.currently.summary +"It is currently " + body.currently.temperature+ " degrees out there. There is a " + body.currently.precipProbability*100 + "% chance of rain. The highest temperature of the day was "+ body.daily.data[0].temperatureHigh + " and the lowest temperature was " + body.daily.data[0].temperatureLow)
         }
     })
 }
